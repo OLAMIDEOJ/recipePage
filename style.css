@@ -1,0 +1,203 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: sans-serif, 'Poppins';
+}
+
+img {
+ max-width: 100%;
+}
+
+body {
+ background: #f3e5d8;
+}
+
+.main {
+background: #fff;
+margin: 50px auto;
+padding: 20px;
+width: 80%;
+border-radius: 10px;
+}
+
+
+h1, h2 {
+ font-family: youngserif;
+ font-weight: 500;
+ font-size: 24px;
+ margin: 10px 0;
+}
+
+
+.container div:not(:first-child) {
+ padding: 1.5rem;
+}
+
+.con1 img {
+border-radius: 10px;
+}
+
+.con1 h1 {
+ font-weight: bold;
+}
+
+.con1 p {
+ font-size: 12px;
+margin-bottom: 10px;
+}
+
+.con1 article {
+ background: #FFF7FC;
+ padding: 1.5rem;
+ line-height: 1.6rem;
+ font-size: 12px;
+}
+
+.preparation h3 {
+color: #8C5B70;
+}
+
+.ingredient {
+ margin-top: -10px;
+ line-height: 1.5rem;
+ font-size: 12px;
+ border-bottom: 1px solid #EBEBEB;
+}
+
+.ingredient h2 {
+ color: #744236;
+ font-weight: bold;
+}
+
+.instruction {
+ margin-top: -10px;
+ line-height: 1.2rem;
+ border-bottom: 1px solid #ebebeb;
+ font-size: 12px;
+}
+
+.instruction h2 {
+ color: #744236;
+ font-weight: bold;
+}
+
+
+ul, ol {
+ padding: 10px;
+}
+
+.nutrition {
+font-size: 12px;
+}
+
+.nutrition h2 {
+ color: #744236;
+ font-weight: bold;
+ font-size: 24px;
+}
+
+.nutritionParagraph {
+ margin-bottom: 10px;
+ line-height: 1.2;
+}
+
+.nutrition p {
+ margin: 30px 0;
+}
+
+/* .nutrition article {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+} */
+
+.nutrition article p {
+ border-bottom: 1px solid #ebebeb;
+ display: flex;
+ justify-content: space-between;
+ margin: 10px 0;
+ padding-left: 30px;
+}
+
+.nutrition article span {
+ color: #885746;
+ font-weight: bold;
+ margin-left: 10px;
+ padding-right: 50px;
+}
+
+
+
+ul li::marker, ol li::marker {
+ color: #744236;
+ font-weight: bold;
+ font-size: 16px;
+}
+.attribution { font-size: 11px; text-align: center; }
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.attribution {
+ margin-bottom: 20px;
+}
+
+
+
+
+
+@media screen and (max-width: 375px) {
+    .main {
+        width: 95%; /* Use more screen width on smaller devices */
+        margin: 20px auto; /* Reduce margins for smaller screens */
+        padding: 15px; /* Slightly reduce padding */
+    }
+
+    h1, h2 {
+        font-size: 20px; /* Reduce font size for better readability on smaller screens */
+    }
+
+    .con1 p, .con1 article, .ingredient, .instruction, .nutrition {
+        font-size: 10px; /* Make text smaller to fit the smaller viewport */
+        line-height: 1.4rem; /* Adjust line height for smaller text */
+    }
+
+    .nutrition h2 {
+        font-size: 18px; /* Scale down the size of nutrition headers */
+    }
+
+    .preparation h3 {
+        font-size: 14px; /* Adjust the size of h3 elements for better readability */
+    }
+
+    ul, ol {
+        padding: 5px; /* Reduce padding for lists */
+    }
+
+    .nutrition article p {
+        margin: 5px 0; /* Tighten up margins for better spacing */
+        padding-left: 10px; /* Reduce padding to fit smaller screens */
+    }
+
+    .nutrition article span {
+        padding-right: 20px; /* Adjust padding to keep alignment */
+    }
+
+    .attribution {
+        font-size: 10px; /* Adjust attribution text size */
+        margin-bottom: 10px; /* Reduce bottom margin */
+    }
+
+    img {
+        border-radius: 8px; /* Slightly reduce border-radius */
+    }
+    
+    .container div:not(:first-child) {
+        padding: 1rem; /* Reduce padding for better spacing on mobile */
+    }
+
+    .ingredient, .instruction {
+        margin-top: 0; /* Adjust margins for smaller screens */
+        border-bottom: none; /* Optionally remove borders if spacing is tight */
+    }
+}
